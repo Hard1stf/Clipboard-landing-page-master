@@ -11,3 +11,67 @@
     --Bai-Jamjuree:  "Bai Jamjuree", sans-serif;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--Bai-Jamjuree);
+}
+
+.hero{
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 95svh;
+}
+
+.hero-content{
+    max-width: 425px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.hero-content h1{
+    padding-inline: 55px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.hero-content p{
+    padding-inline: 34px;
+    line-height: 26px;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.download{
+    color: white;
+    padding-block: 20px;
+    padding-inline: 85px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.first-button{
+    background-color: var(--Strong-Cyan);
+    box-shadow: inset 0px -5px 0px 1px hsl(171deg 100% 28.81%);
+}
+.second-button{
+    background-color: var(--Light-Blue);
+    box-shadow: inset 0px -5px 0px 1px hsl(233deg 47.8% 49.65%);
+}
