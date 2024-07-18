@@ -75,3 +75,49 @@ body{
     background-color: var(--Light-Blue);
     box-shadow: inset 0px -5px 0px 1px hsl(233deg 47.8% 49.65%);
 }
+
+
+.main-content{
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 100px;
+}
+
+.track-part{
+    width: 90%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.title-color{
+    color: var(--Dark-Grayish-Blue);
+}
+.para-color{
+    color: var(--Grayish-Blue);
+}
+.track-part .para-color{
+    padding-inline: 20px;
+}
+
+.computer-png{
+    width: 100%;
+    padding-block: 50px;
+}
+
+.track-features{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+.titles{
+    padding-bottom: 0.6rem;
+}
