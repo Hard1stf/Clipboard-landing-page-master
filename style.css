@@ -85,7 +85,11 @@ body{
     padding-block: 100px;
 }
 
-.track-part{
+.head-para{
+    padding-inline: 20px;
+}
+
+.part{
     width: 90%;
     display: flex;
     gap: 2rem;
@@ -100,9 +104,6 @@ body{
 }
 .para-color{
     color: var(--Grayish-Blue);
-}
-.track-part .para-color{
-    padding-inline: 20px;
 }
 
 .computer-png{
@@ -120,4 +121,25 @@ body{
 
 .titles{
     padding-bottom: 0.6rem;
+    font-size: 1.6rem;
+}
+
+
+.device-png{
+    width: 100%;
+    padding-block: 20px;
+}
+
+.pad-block > img{
+    padding-block: 25px;
+}
+
+.access-part .para-color{
+    width: 100%;
+}
+
+.companies-logos{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
 }
