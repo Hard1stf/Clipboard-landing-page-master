@@ -180,6 +180,7 @@ footer{
     color: hsl(0, 0%, 51%);
     font-weight: 600;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .social-handles{
