@@ -1,34 +1,36 @@
-:root{
+:root {
     /* Primary Color */
-    --Strong-Cyan : hsl(171, 66%, 44%);
-    --Light-Blue :  hsl(233, 100%, 69%);
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
 
     /* Neutral Color */
     --Dark-Grayish-Blue: hsl(210, 10%, 33%);
     --Grayish-Blue: hsl(201, 11%, 66%);
 
     /* Font Family */
-    --Bai-Jamjuree:  "Bai Jamjuree", sans-serif;
+    --Bai-Jamjuree: "Bai Jamjuree", sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--Bai-Jamjuree);
 }
 
-.hero{
+.hero {
     background-image: url(./images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 95svh;
+    display: flex;
+    justify-content: center;
 }
 
-.hero-content{
+.hero-content {
     max-width: 425px;
     display: flex;
     gap: 2rem;
@@ -39,25 +41,25 @@ body{
     text-align: center;
 }
 
-.hero-content h1{
+.hero-content h1 {
     padding-inline: 55px;
     color: var(--Dark-Grayish-Blue);
 }
 
-.hero-content p{
+.hero-content p {
     padding-inline: 34px;
     line-height: 26px;
     color: var(--Grayish-Blue);
     font-weight: 400;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 1rem;
     flex-direction: column;
 }
 
-.download{
+.download {
     color: white;
     padding-block: 20px;
     padding-inline: 85px;
@@ -67,17 +69,22 @@ body{
     font-size: 18px;
 }
 
-.first-button{
+.first-inner-shadow {
     background-color: var(--Strong-Cyan);
     box-shadow: inset 0px -5px 0px 1px hsl(171deg 100% 28.81%);
 }
-.second-button{
+
+.second-inner-shadow {
     background-color: var(--Light-Blue);
     box-shadow: inset 0px -5px 0px 1px hsl(233deg 47.8% 49.65%);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
 
-.main-content{
+.main-content {
     max-width: 425px;
     display: flex;
     flex-direction: column;
@@ -85,11 +92,11 @@ body{
     padding-block: 100px;
 }
 
-.head-para{
+.head-para {
     padding-inline: 20px;
 }
 
-.part{
+.part {
     width: 90%;
     display: flex;
     gap: 2rem;
@@ -99,19 +106,20 @@ body{
     text-align: center;
 }
 
-.title-color{
+.title-color {
     color: var(--Dark-Grayish-Blue);
 }
-.para-color{
+
+.para-color {
     color: var(--Grayish-Blue);
 }
 
-.computer-png{
+.computer-png {
     width: 100%;
     padding-block: 50px;
 }
 
-.track-features{
+.track-features {
     display: flex;
     gap: 50px;
     flex-direction: column;
@@ -119,56 +127,57 @@ body{
     padding-inline: 20px;
 }
 
-.titles{
+.titles {
     padding-bottom: 0.6rem;
     font-size: 1.6rem;
 }
 
 
-.device-png{
+.device-png {
     width: 100%;
     padding-block: 20px;
 }
 
-.pad-block > img{
+.pad-block>img {
     padding-block: 25px;
 }
 
-.access-part .para-color{
+.access-part .para-color {
     width: 100%;
 }
 
-.companies-logos{
+.companies-logos {
     display: flex;
     flex-direction: column;
     gap: 90px;
 }
 
-.end-note{
-    padding-bottom: 100px; /* override padding bottom*/
+.end-note {
+    padding-bottom: 100px;
+    /* override padding bottom*/
 }
 
-.end-note .para-color{
+.end-note .para-color {
     width: 91%;
 }
 
-footer{
-    background-color:#f5f6f8;
+footer {
+    background-color: #f5f6f8;
     padding: 100px 0px 80px 0px;
 }
 
-.footer-part{
+.footer-part {
     display: flex;
     gap: 100px;
     flex-direction: column;
 }
 
-.logo{
+.logo {
     width: 80px;
     margin-inline: auto;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -176,14 +185,136 @@ footer{
     text-align: center;
 }
 
-.footer-para{
+.footer-para {
     color: hsl(0, 0%, 51%);
     font-weight: 600;
     font-size: 1.2rem;
     text-decoration: none;
 }
 
-.social-handles{
+.social-handles {
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/* desktop screen size to  1440p resolution. */
+
+@media (min-width: 1024px) {
+
+    main {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hero {
+        background-image: url(./images/bg-header-desktop.png);
+        height: 55svh;
+    }
+
+    .logo {
+        width: 100px;
+        padding-bottom: 40px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        gap: 0px;
+    }
+
+    .hero-content h1 {
+        color: var(--Dark-Grayish-Blue);
+        padding-inline: 55px;
+        padding-bottom: 12px;
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        width: 70%;
+        line-height: 25px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        padding-block: 36px;
+    }
+
+    .download {
+        padding-block: 18px;
+        padding-inline: 36px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .first-inner-shadow {
+        box-shadow: inset 0px -3px 0px 1px hsl(171deg 100% 28.81%);
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .second-inner-shadow {
+        box-shadow: inset 0px -3px 0px 1px hsl(233deg 47.8% 49.65%);
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .first-inner-shadow:hover {
+        background-color: hsl(171deg 66% 44% / 71%);
+        box-shadow: inset 0px -1px 0px 1px hsl(171deg 100% 28.81%);
+    }
+
+    .second-inner-shadow:hover {
+        background-color: hsl(233deg 100% 69% / 71%);
+        box-shadow: inset 0px -1px 0px 1px hsl(233deg 47.8% 49.65%);
+    }
+
+    .main-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 100px;
+    }
+
+    .track-part {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            'title title'
+            'para para'
+            'img features'
+        ;
+        gap: 2rem;
+        padding-bottom: 80px;
+        text-align: left;
+    }
+
+    .head-para {
+        width: 43%;
+        line-height: 28px;
+        margin-inline: auto;
+        grid-area: para;
+        text-align: center;
+    }
+
+    .head-title{
+        grid-area: title;
+        margin-inline: auto;
+    }
+
+    .computer-png {
+        position: relative;
+        left: -35px;
+        grid-area: img;
+        padding-block: 0px;
+        align-self: flex-start;
+        margin-right: -10px;
+    }
+
+    .track-features {
+        width: 60%;
+        align-items: center;
+        padding-inline: 20px;
+        grid-area: features;
+    }
+
 }
