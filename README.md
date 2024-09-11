@@ -17,12 +17,12 @@ This project is a responsive Clipboard landing page created using HTML5 and CSS3
 
 ### Screenshot
 
-![Clipboard Landing Page Screenshot](./screenshot.png)
+![Clipboard Landing Page Screenshot](./design/Screenshort%20Clipboard.png)
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/yourusername/clipboard-landing-page)
-- Live Site URL: [Live Demo](https://yourusername.github.io/clipboard-landing-page)
+- Solution URL: [GitHub Repository](https://github.com/Hard1stf/Clipboard-landing-page-master)
+- Live Site URL: [Live Demo](https://hard1stf.github.io/Clipboard-landing-page-master/)
 
 ## My Process
 
@@ -30,7 +30,7 @@ This project is a responsive Clipboard landing page created using HTML5 and CSS3
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flex-box
 - CSS Grid
 - Mobile-first workflow
 
@@ -39,14 +39,14 @@ This project is a responsive Clipboard landing page created using HTML5 and CSS3
 In this project, I focused on building a clean, responsive landing page with modern web techniques. Some key learnings include:
 
 - **Responsive Web Design**: Learned to adapt the layout to different screen sizes using media queries.
-- **Flexbox and Grid**: Leveraged the power of Flexbox and Grid to create flexible and responsive layouts.
+- **Flex-box and Grid**: Leveraged the power of Flexbox and Grid to create flexible and responsive layouts.
 - **CSS Variables**: Utilized CSS custom properties to maintain consistent styling for colors, fonts, and spacings.
 - **HTML5 Semantics**: Applied semantic HTML5 to improve the structure and accessibility of the webpage.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [@yourusername](https://github.com/yourusername)
+- Frontend Mentor - [@Hard1stf](https://www.frontendmentor.io/profile/Hard1stf)
+- GitHub - [@Hard1stf](https://github.com/Hard1stf)
 
 ## Acknowledgments
 
