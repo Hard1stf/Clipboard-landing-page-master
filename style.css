@@ -276,7 +276,7 @@ footer {
     }
 
     .track-part {
-        width: 100%;
+        /* width: 100%; */
         display: grid;
         grid-template-areas:
             'title title'
@@ -284,7 +284,7 @@ footer {
             'img features'
         ;
         gap: 2rem;
-        padding-bottom: 80px;
+        padding-bottom: 145px;
         text-align: left;
     }
 
@@ -294,6 +294,7 @@ footer {
         margin-inline: auto;
         grid-area: para;
         text-align: center;
+        padding-inline: 35px;
     }
 
     .head-title{
@@ -317,4 +318,122 @@ footer {
         grid-area: features;
     }
 
+    .device-png {
+        width: 65%;
+        padding-block: 0px;
+    }
+    .access-part .track-features{
+        display: grid;
+        grid-template-areas: 
+        'title title title'
+        'features1 features2 features3'
+        ;
+        gap: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .first{
+        grid-area: title;
+    }
+
+    .second{
+        grid-area: features1;
+    }
+    .third{
+        grid-area: features2;
+    }
+    .fourth{
+        grid-area: features3;
+    }
+
+    .pad-block{
+        width: 90%;
+    }
+
+    .companies-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    .end-note {
+        padding-bottom: 50px;
+    }
+
+    .end-note .para-color {
+        width: 40%;
+    }
+
+    .footer-part {
+        display: flex;
+        gap: 100px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
+
+    .footer-info {
+        display: grid;
+        grid-template-areas: 
+        'logo faq privacy install'
+        'logo contact press press'
+        ;
+        gap: 0px;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo{
+        grid-area: logo;
+    }
+
+    .faq{
+        grid-area: faq;
+        text-align: left;
+    }
+
+    .privacy{
+        grid-area: privacy;
+    }
+
+    .press{
+        grid-area: press;
+        text-align: left;
+    }
+
+    .install{
+        grid-area: install;
+    }
+
+    .contact{
+        grid-area: contact;
+    }
+
+    .social-handles {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 10%;
+    }
+
+    .footer-info .logo {
+        width: 70px;
+        padding-bottom: 0px;
+        margin-right: 120px;
+    }
+
+    .footer-para {
+        color: hsl(0, 0%, 51%);
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 0px 80px 0px 0px;
+    }
+
+    footer {
+        background-color: #f5f6f8;
+        padding: 70px 0px 70px 0px;
+    }
 }
